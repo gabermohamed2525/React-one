@@ -73,7 +73,7 @@ export default function BigProdcuts( {prodcutsData ,isPending , page , totalPage
       }
     </div>
     
-    {totalPages>1 &&(
+    {totalPages && totalPages > 1 && (
 
     <div className='mt-4 flex items-center justify-center  bg-white/80   p-3 rounded-2xl text-white'>
         <Pagination onChange={(_, val)=> handleChangePage(val)} count={totalPages} page={page}  />
