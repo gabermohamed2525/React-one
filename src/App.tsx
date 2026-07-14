@@ -1,6 +1,5 @@
 import Layout from "./Layout";
-import {createBrowserRouter , RouterProvider} from 'react-router-dom'
-import Home from "./pages/Home";
+import { createHashRouter, RouterProvider } from "react-router-dom";import Home from "./pages/Home";
 import About from "./pages/About";
 import Bolg from "./pages/Bolg";
 import Tournament from "./pages/Tournament";
@@ -26,7 +25,7 @@ export default function App() {
       restoreUserSession()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
-  const routing = createBrowserRouter([
+  const routing = createHashRouter([
     {
       path:'/',
       element : <Layout /> ,
